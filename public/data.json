@@ -5,8 +5,8 @@
         "title": "Web Development From Scratch",
         "author_image": "https://pbs.twimg.com/profile_images/500020424864849920/taW8OsLp_400x400.jpeg",
         "cover_image": "https://www.programming-hero.com/blog/assets/images/blog/web-development-from-scratch.png",
-        "read_time": 20,
-        "publish_date": 4
+        "read_time": "05 min",
+        "publish_date": "Mar 14 (4 Days ago)"
     },
     {
         "id": "2",
@@ -14,8 +14,8 @@
         "title": "Top Web Development Stacks that you should know to land with a 6 Figure Salary",
         "author_image": "https://upload.wikimedia.org/wikipedia/commons/2/27/Joel_Spolsky_2014-06-18.jpg",
         "cover_image": "https://www.programming-hero.com/blog/assets/images/blog/top-web-development-stacks-that-you-should-know-to-land-with-a-6-figure-salary.png",
-        "read_time": 20,
-        "publish_date": 4
+        "read_time": "10 min",
+        "publish_date": "Mar 12 (6 Days ago)"
     },
     {
         "id": "3",
@@ -23,8 +23,8 @@
         "title": "This Is What Makes You A Good Programmer",
         "author_image": "https://pbs.twimg.com/profile_images/859513084003614720/amSkzym6_400x400.jpg",
         "cover_image": "https://www.programming-hero.com/blog/assets/images/blog/this-is-what-makes-you-a-good-programmer.png",
-        "read_time": 20,
-        "publish_date": 4
+        "read_time": "8 min",
+        "publish_date": "Mar 10 (8 Days ago)"
     },
     {
         "id": "4",
@@ -32,7 +32,7 @@
         "title": "Things you should know before learning JavaScript Frameworks",
         "author_image": "https://media.licdn.com/dms/image/C4D03AQFuoc3_tShD3A/profile-displayphoto-shrink_800_800/0/1516255750855?e=2147483647&v=beta&t=g-VqWtGgdQBBiTb5azmvhqr_hS5yGWjc6RKChvzRAGo",
         "cover_image": "https://www.programming-hero.com/blog/assets/images/blog/things-you-should-know-before-learning-javascript-frameworks.png",
-        "read_time": 20,
-        "publish_date": 4
+        "read_time": "12 min",
+        "publish_date": "Mar 8 (10 Days ago)"
     }
 ]
