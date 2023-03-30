@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "author_name": "Jhankar Mahbub",
+        "title": "Web Development From Scratch",
+        "author_image": "https://pbs.twimg.com/profile_images/500020424864849920/taW8OsLp_400x400.jpeg",
+        "cover_image": "https://www.programming-hero.com/blog/assets/images/blog/web-development-from-scratch.png",
+        "read_time": 20,
+        "publish_date": 4
+    },
+    {
+        "id": "2",
+        "author_name": "Joel Spolsky",
+        "title": "Top Web Development Stacks that you should know to land with a 6 Figure Salary",
+        "author_image": "https://upload.wikimedia.org/wikipedia/commons/2/27/Joel_Spolsky_2014-06-18.jpg",
+        "cover_image": "https://www.programming-hero.com/blog/assets/images/blog/top-web-development-stacks-that-you-should-know-to-land-with-a-6-figure-salary.png",
+        "read_time": 20,
+        "publish_date": 4
+    },
+    {
+        "id": "3",
+        "author_name": "Erik Dietrich",
+        "title": "This Is What Makes You A Good Programmer",
+        "author_image": "https://pbs.twimg.com/profile_images/859513084003614720/amSkzym6_400x400.jpg",
+        "cover_image": "https://www.programming-hero.com/blog/assets/images/blog/this-is-what-makes-you-a-good-programmer.png",
+        "read_time": 20,
+        "publish_date": 4
+    },
+    {
+        "id": "4",
+        "author_name": "Fabien Sanglard",
+        "title": "Things you should know before learning JavaScript Frameworks",
+        "author_image": "https://media.licdn.com/dms/image/C4D03AQFuoc3_tShD3A/profile-displayphoto-shrink_800_800/0/1516255750855?e=2147483647&v=beta&t=g-VqWtGgdQBBiTb5azmvhqr_hS5yGWjc6RKChvzRAGo",
+        "cover_image": "https://www.programming-hero.com/blog/assets/images/blog/things-you-should-know-before-learning-javascript-frameworks.png",
+        "read_time": 20,
+        "publish_date": 4
+    }
+]
