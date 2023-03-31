@@ -5,7 +5,8 @@ import SingleBlog from "../SingleBlog/SingleBlog";
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
   //   console.log(blogs);
-  const [bookMark,setBookMark]=useState([])
+  const [bookMark,setBookMark]=useState([]);
+  const [readTime,setReadTime]=useState([]);
 //   console.log(bookMark)
 
   const handleBookMark=(blog)=>{
@@ -14,8 +15,10 @@ const Blogs = () => {
     setBookMark(newArr);
   }
 
-  const handleReadTime=()=>{
-
+  const handleReadTime=(blog)=>{
+    // console.log(blog)
+    const newArr=[...readTime,blog];
+    setReadTime(newArr);
   }
 
   useEffect(() => {
@@ -32,7 +35,7 @@ const Blogs = () => {
         ))}
       </div>
       <div>
-        <BookMark bookMark={bookMark}></BookMark>
+        <BookMark bookMark={bookMark} readTime={readTime}></BookMark>
       </div>
     </div>
   );
