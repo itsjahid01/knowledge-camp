@@ -5,6 +5,8 @@ import SingleBlog from "../SingleBlog/SingleBlog";
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
   //   console.log(blogs);
+
+  
   useEffect(() => {
     fetch("../../../public/data.json")
       .then((res) => res.json())
@@ -12,7 +14,7 @@ const Blogs = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-4 gap-x-5 gap-y-5 p-5">
+    <div className="grid grid-cols-4 gap-5 m-5">
       <div className="col-span-3">
         {blogs.map((blog) => (
           <SingleBlog blog={blog} key={blog.id}></SingleBlog>
