@@ -5,8 +5,19 @@ import SingleBlog from "../SingleBlog/SingleBlog";
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
   //   console.log(blogs);
+  const [bookMark,setBookMark]=useState([])
+//   console.log(bookMark)
 
-  
+  const handleBookMark=(blog)=>{
+    // console.log(blog)
+    const newArr=[...bookMark,blog];
+    setBookMark(newArr);
+  }
+
+  const handleReadTime=()=>{
+
+  }
+
   useEffect(() => {
     fetch("../../../public/data.json")
       .then((res) => res.json())
@@ -17,11 +28,11 @@ const Blogs = () => {
     <div className="grid grid-cols-4 gap-5 m-5">
       <div className="col-span-3">
         {blogs.map((blog) => (
-          <SingleBlog blog={blog} key={blog.id}></SingleBlog>
+          <SingleBlog blog={blog} key={blog.id} handleBookMark={handleBookMark} handleReadTime={handleReadTime}></SingleBlog>
         ))}
       </div>
       <div>
-        <BookMark></BookMark>
+        <BookMark bookMark={bookMark}></BookMark>
       </div>
     </div>
   );

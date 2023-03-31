@@ -3,8 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark} from '@fortawesome/free-solid-svg-icons'
 
 const SingleBlog = (props) => {
-  console.log(props);
+//   console.log(props);
   const {author_image,author_name,cover_image,title,publish_date,read_time}=props.blog;
+  const {handleBookMark,handleReadTime}=props;
 
   return (
     <div>
@@ -19,11 +20,11 @@ const SingleBlog = (props) => {
                     <p>{publish_date}</p>
                 </div>
             </div>
-            <div><span>{read_time} min read</span> <span className="ml-1 cursor-pointer"><FontAwesomeIcon icon={faBookmark} /></span></div>
+            <div><span>{read_time} min read</span> <span onClick={ () =>handleBookMark(props.blog)} className="ml-1 cursor-pointer"><FontAwesomeIcon icon={faBookmark} /></span></div>
           </div>
           <h2 className="text-2xl font-bold mt-3 mb-3">{title}</h2>
           <p>#beginners #programming</p>
-          <p className="w-24 text-blue-600 underline cursor-pointer mt-3">Mark as read</p>
+          <p onClick={()=> handleReadTime(props.blog)} className="w-24 text-blue-600 underline cursor-pointer mt-3">Mark as read</p>
         </div>
       </div>
     </div>
