@@ -7,7 +7,6 @@ const Blogs = () => {
   //   console.log(blogs);
   const [bookMark,setBookMark]=useState([]);
   const [readTime,setReadTime]=useState([]);
-//   console.log(bookMark)
 
   const handleBookMark=(blog)=>{
     // console.log(blog)
@@ -28,13 +27,13 @@ const Blogs = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-4 gap-5 m-5">
-      <div className="col-span-3">
+    <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-5 m-5">
+      <div className="lg:col-span-3">
         {blogs.map((blog) => (
           <SingleBlog blog={blog} key={blog.id} handleBookMark={handleBookMark} handleReadTime={handleReadTime}></SingleBlog>
         ))}
       </div>
-      <div>
+      <div className="">
         <BookMark bookMark={bookMark} readTime={readTime}></BookMark>
       </div>
     </div>
