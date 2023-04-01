@@ -2,24 +2,26 @@ import React, { useEffect, useState } from "react";
 import BookMark from "../Bookmark/BookMark";
 import SingleBlog from "../SingleBlog/SingleBlog";
 import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
   //   console.log(blogs);
   const [bookMark,setBookMark]=useState([]);
+  const [useId,setUseId]=useState([]);
   const [readTime,setReadTime]=useState([]);
 
-  const handleBookMark=(blog)=>{
+  const handleBookMark=(blog,id)=>{
     // console.log(blog)
-    // if (bookMark.contains(blog)) {
-    //     toast("You Have Already Bookmarked This Blog !!")               
-    // }
-    // else{
-        
-    // }
-    const newArr=[...bookMark,blog];
-        setBookMark(newArr);
-    
+    if (useId.includes(id)) {
+        toast("You Have Already Bookmarked This Blog !!");   
+        setBookMark((newArr)=>[...newArr,blog]);
+        setUseId((newId)=>[...newId,id]);           
+    }
+    else{
+        setBookMark((newArr)=>[...newArr,blog]);
+        setUseId((newId)=>[...newId,id]);
+    }
   }
 
   const handleReadTime=(blog)=>{
@@ -29,7 +31,7 @@ const Blogs = () => {
   }
 
   useEffect(() => {
-    fetch("../../../public/data.json")
+    fetch('data.json')
       .then((res) => res.json())
       .then((data) => setBlogs(data));
   }, []);
