@@ -12,7 +12,7 @@ const BookMark = (props) => {
 
 
     return (
-        <div className='sticky top-5'>
+        <div className='sticky top-3'>
             <div className='p-4 bg-gray-200 border border-blue-500 rounded mb-3'>
                 <p className='text-center text-blue-500 font-bold'>Spent time on read : {time} min</p>
             </div>

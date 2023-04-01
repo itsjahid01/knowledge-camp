@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import BookMark from "../Bookmark/BookMark";
 import SingleBlog from "../SingleBlog/SingleBlog";
+import { ToastContainer, toast } from 'react-toastify';
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
@@ -10,8 +11,15 @@ const Blogs = () => {
 
   const handleBookMark=(blog)=>{
     // console.log(blog)
+    // if (bookMark.contains(blog)) {
+    //     toast("You Have Already Bookmarked This Blog !!")               
+    // }
+    // else{
+        
+    // }
     const newArr=[...bookMark,blog];
-    setBookMark(newArr);
+        setBookMark(newArr);
+    
   }
 
   const handleReadTime=(blog)=>{
